@@ -791,6 +791,13 @@
                 gap: 10px;
                 padding: 10px;
                 border-bottom: 1px solid #e0e0e0;
+                position: fixed;
+                top: 0;
+                left: 0;
+                right: 0;
+                background: #ffffff;
+                z-index: 100;
+                box-shadow: 0 2px 5px rgba(0,0,0,0.1);
             }
             
             .logo-container {
@@ -822,6 +829,7 @@
                 order: -1;
                 border-top: 1px solid #e0e0e0;
                 border-bottom: 1px solid #e0e0e0;
+                margin-top: 100px; /* 为固定顶部留出空间 */
             }
             
             /* 移动端右边栏调整 */
@@ -839,6 +847,13 @@
                 text-align: center;
                 padding: 8px;
                 gap: 8px;
+                position: fixed;
+                top: 0;
+                left: 0;
+                right: 0;
+                background: #ffffff;
+                z-index: 100;
+                box-shadow: 0 2px 5px rgba(0,0,0,0.1);
             }
             
             .logo {
@@ -865,6 +880,9 @@
             .sidebar {
                 min-height: 300px;
                 max-height: 300px;
+            }
+            .main-chat {
+                margin-top: 90px; /* 为固定顶部留出空间 */
             }
         }
     </style>
@@ -1411,7 +1429,7 @@
                                 content: `- 你是墨老师，汕头技师学院的PPT学习导师，专门为用户提供关于PPT设计与演示学习过程中的帮助与指导。
                                             - 你具备丰富的PPT设计与演示知识，能够解答用户在制作、设计、演示PPT时遇到的各种问题。
                                             - 你的回答第一段是"我是墨老师，让我们一起来分析问题："
-                                            - 你的回答是"一、分析问题；二、案例解析；三、发散思考"三步法引导学生理解知识
+                                            - 你的回答是"一、分析问题———二、案例解析———三、发散思考"三步法引导学生理解知识
                                             - 尽量用图标辅助输出结果，例如🎯，📋，🌰等等
                                             - 只回答PPT设计与演示或者汕头技师学院的相关问题`
                             },
